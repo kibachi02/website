@@ -1,0 +1,214 @@
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    margin: 0;
+    color: #000;
+    background-color: #ffffff;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+header {
+    height: 50px;
+    background-color: #3f434a;
+    color: #ffffff;
+}
+
+header h1 {
+    font-weight: 400;
+}
+
+.main {
+    text-align: center;
+}
+
+section {
+    display: block;
+}
+
+section.introduce {
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+
+
+section.introduce {
+    background-image: url(https://cdn.pixabay.com/photo/2019/08/26/08/42/nature-4431134__340.jpg);
+    background-color:rgba(255,255,255,0.3);
+    background-blend-mode:lighten;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    min-height: 660px;
+    position: relative;
+    padding-top: 48px;
+ 
+}
+
+section.introduce .name {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 2rem;
+    animation: SlideIn 1.6s;
+}
+
+@keyframes SlideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(64px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+section.introduce .jp_name {
+    font-weight: 400;
+}
+
+section.introduce .en_name {
+    font-weight: 400;
+}
+
+section.introduce .tagline {
+    font-size: 1.5rem;
+    color: #ffffff;
+    opacity: 0.8;
+    margin: 30vmin 6vmin 10vmin;
+    font-weight: 400;
+    animation: SlideIn 1.6s;
+}
+
+section.background {
+    padding: 0 6vmin;
+    background: #f5f5f5;
+}
+
+section.background .container {
+    height: 730px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+section.background .container .item {
+    flex-grow: 1;
+}
+
+section.background .container .title {
+    order: 2;
+    width: 50%;
+    margin-top: 140px;
+    max-height: fit-content;
+    margin-bottom: 24px;
+
+    flex-grow: 1;
+}
+
+section.background .container .title h2 {
+    font-size: 2.6rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+section.background .container .img {
+    background-image: url(../images/4183350_s.jpg);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 50%;
+    margin-bottom: -10rem;
+}
+
+section.background .container .img {
+    order: 1;
+    width: 50%;
+}
+
+section.background .container .body {
+    max-width: 400px;
+    order: 3;
+    margin: 0 auto;
+}
+
+section.background .container .body p {
+    text-align: justify;
+}
+
+/* section.skill */
+section.skills {
+    text-align: center;
+    padding: 12vmin 4vmin 16vmin;
+    transform: translateY(20px);
+    transition: all 1.3s 0s ease-out;
+}
+
+.active{
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+
+section.skills .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+section.skills .container .item {
+    flex-grow: 1;/* 伸び率のこと。この場合は子要素の大きさ（幅）はは1：1：1の関係で並ぶ */
+    flex-basis: 223px;
+    padding-top: 80px;
+    margin-top: 24px;
+    padding-right: 13px;
+}
+
+section.skills .container .item　h3 {
+    font-weight: bold;
+}
+
+
+section.skills .container .item1 {
+    width: 80px;
+    background-image: url("../images/html-5.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 70px;
+}
+
+section.skills .container .item2 {
+    width: 80px;
+    background-image: url("../images/javascript.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 80px;
+}
+
+section.skills .container .item3 {
+    width: 80px;
+    background-image: url("../images/python.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 80px;
+}
+
+.skill-sentence {
+    margin: 0 auto;
+    width: 80%;
+}
+
+footer {
+    padding: 8vmin 4vmin 16vmin;
+    text-align: center;
+    background: #3f434a;
+    color: #ffffff;
+    position: relative;
+    min-height: 40px;
+}
+
+.fab {
+    color: #ffffff;
+    font-size: 2.2rem;
+    padding-right: 2rem;
+}

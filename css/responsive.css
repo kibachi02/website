@@ -1,0 +1,55 @@
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+    section.introduce {
+        background-image: url("../images/nature-4431134_640.jpg");
+        background-color:rgba(255,255,255,0.3);
+        background-blend-mode:lighten;
+        background-size: cover;
+        height: 100vh;
+        text-align: center;
+        min-height: 660px;
+        position: relative;
+        padding-top: 48px;
+    }
+
+    
+}
+
+@media screen and (max-width: 768px) {
+    section.background .container {
+        flex-wrap: wrap;
+        flex-flow: column;
+        display: flex;
+    }
+
+    section.background .container {
+        flex-wrap: wrap;
+        flex-flow: column;
+        display: flex;
+    }
+
+    section.background .container .title {
+        order: 1;
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: -15vmin;
+    }
+
+    section.background .container .item {
+        flex-grow: 1;
+    }
+
+    section.background .container .img {
+        order: 2;
+        width: 100%;
+        background-size: 80%;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+
+    section.background .container .body {
+        order: 3;
+        padding: 2vmin 6vmin;
+        max-width: 400px;
+    }
+}
